@@ -9,11 +9,11 @@
 #include "Lixo.h"
 
 #define WINDOWWIDTH 800
-#define WINDOWHEIGTH 600
+#define WINDOWHEIGHT 600
 
 namespace GUI
 {
-    void renderizarJogo();
+    //void render(sf::RenderWindow);
 };
 
 #endif // GUI_H

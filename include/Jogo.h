@@ -12,6 +12,7 @@ public:
 private:
     void processarEventos();
     void atualizarEstado();
+    void renderizarTela();
 
     sf::RenderWindow tela;
 };

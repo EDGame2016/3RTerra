@@ -1,9 +1,8 @@
 #include "GUI.h"
-#include "constantes.h"
 
-GUI::renderizarJogo()
+/*GUI::render(sf::RenderWindow tela)
 {
     tela.clear();
 
     tela.display();
-}
+}*/

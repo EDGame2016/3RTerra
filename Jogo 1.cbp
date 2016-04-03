@@ -67,7 +67,6 @@
 		<Unit filename="include/GUI.h" />
 		<Unit filename="include/Jogo.h" />
 		<Unit filename="include/Lixo.h" />
-		<Unit filename="include/constantes.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/GUI.cpp" />
 		<Unit filename="src/Jogo.cpp" />

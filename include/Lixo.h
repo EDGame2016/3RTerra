@@ -7,7 +7,7 @@ enum TipoLixo
     PLASTICO,
     VIDRO,
     METAL,
-    ORGANICO;
+    ORGANICO
 };
 
 enum Cores
@@ -16,7 +16,7 @@ enum Cores
     VERMELHO,
     VERDE,
     AMARELO,
-    MARROM;
+    MARROM
 };
 
 enum class icone

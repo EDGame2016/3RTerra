@@ -1,6 +1,6 @@
 #include "Jogo.h"
 
-int main(int, char const**)
+int main()
 {
     Jogo jogo;
 
