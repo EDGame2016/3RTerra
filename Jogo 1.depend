@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1459699400 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
+1459709477 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
-1459708102 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
+1459912518 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
 	"GUI.h"
 
-1459708501 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
+1459912634 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -493,15 +493,15 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1459708437 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\lixo.h
+1459912757 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\lixo.h
 
-1459708455 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
+1459912666 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
 	"GUI.h"
 
 1459708344 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixo.cpp
 	"Lixo.h"
 
-1459708893 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
+1459881131 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
 	<windows.h>
 

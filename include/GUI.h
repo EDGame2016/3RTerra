@@ -8,12 +8,21 @@
 
 #include "Lixo.h"
 
-#define WINDOWWIDTH 800
-#define WINDOWHEIGHT 600
-
-namespace GUI
+class GUI
 {
+public:
+    GUI(int width, int height);
+
+    sf::RenderWindow tela;
+
+
     //void render(sf::RenderWindow);
+
+private:
+
+    int width, height;
+
+
 };
 
 #endif // GUI_H

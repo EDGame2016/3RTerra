@@ -1,7 +1,7 @@
 #ifndef LIXO_H
 #define LIXO_H
 
-enum TipoLixo
+enum Objeto
 {
     PAPEL,
     PLASTICO,
@@ -10,18 +10,13 @@ enum TipoLixo
     ORGANICO
 };
 
-enum Cores
+enum Cor
 {
     AZUL,
     VERMELHO,
     VERDE,
     AMARELO,
     MARROM
-};
-
-enum class icone
-{
-
 };
 
 class Lixo
@@ -31,6 +26,7 @@ public:
     ~Lixo();
 
 private:
+
 
 };
 
