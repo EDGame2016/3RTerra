@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1459709477 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
+1459913099 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
 1459912518 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
@@ -501,7 +501,7 @@
 1459708344 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixo.cpp
 	"Lixo.h"
 
-1459881131 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
+1459964186 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
 	<windows.h>
 
