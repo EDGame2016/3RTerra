@@ -1,5 +1,5 @@
 #include "Jogo.h"
-#include <windows.h>
+
 Jogo::Jogo():gui(WINDOWWIDTH,WINDOWHEIGHT)
 {
 
@@ -12,6 +12,8 @@ Jogo::~Jogo()
 
 void Jogo::run()
 {
+    gui.intro();
+
     while(gui.tela.isOpen())
     {
         processarEventos();
@@ -22,21 +24,16 @@ void Jogo::run()
 
 void Jogo::processarEventos()
 {
-    printf("Eventos aqui\n");
-    //Sleep(1000);
+    sf::Event evento;
 
-    sf::Event event;
-
-    while (gui.tela.pollEvent(event))
+    while (gui.tela.pollEvent(evento))
     {
-        // Close window: exit
-        if (event.type == sf::Event::Closed)
+        if (evento.type == sf::Event::Closed)
         {
             gui.tela.close();
         }
 
-        // Escape pressed: exit
-        if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+        if (evento.type == sf::Event::KeyPressed && evento.key.code == sf::Keyboard::Escape)
         {
             gui.tela.close();
         }
@@ -47,12 +44,10 @@ void Jogo::processarEventos()
 void Jogo::atualizarEstado()
 {
     printf("Atualizando aqui\n");
-    //Sleep(1000);
 }
 
 void Jogo::renderizarTela()
 {
     printf("Renderizando aqui\n");
-    //Sleep(1000);
-    //GUI::render(tela);
+    gui.render();
 }

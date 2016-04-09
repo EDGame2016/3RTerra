@@ -2,14 +2,15 @@
 1459913099 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
-1459912518 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
+1460221656 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
 	"GUI.h"
 
-1459912634 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
+1460220099 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Objeto.h"
 	"Lixo.h"
 
 1429780453 c:\program files (x86)\codeblocks\sfml\include\sfml\system.hpp
@@ -493,15 +494,21 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1459912757 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\lixo.h
+1460220489 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\lixo.h
+	"Objeto.h"
 
-1459912666 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
+1460221525 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
 	"GUI.h"
 
 1459708344 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixo.cpp
 	"Lixo.h"
 
-1459964186 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
+1460207738 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
-	<windows.h>
+
+1460221208 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\objeto.h
+	"GUI.h"
+
+1460221397 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\objeto.cpp
+	"Objeto.h"
 

@@ -2,8 +2,8 @@
 #define JOGO_H
 #include "GUI.h"
 
-#define WINDOWWIDTH 800
-#define WINDOWHEIGHT 600
+#define WINDOWWIDTH 1366
+#define WINDOWHEIGHT 768
 
 class Jogo
 {
@@ -18,6 +18,7 @@ private:
     void processarEventos();
     void atualizarEstado();
     void renderizarTela();
+    void intro();
 
     GUI gui;
 };

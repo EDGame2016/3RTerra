@@ -1,32 +1,19 @@
 #ifndef LIXO_H
 #define LIXO_H
 
-enum Objeto
-{
-    PAPEL,
-    PLASTICO,
-    VIDRO,
-    METAL,
-    ORGANICO
-};
+#include "Objeto.h"
 
-enum Cor
-{
-    AZUL,
-    VERMELHO,
-    VERDE,
-    AMARELO,
-    MARROM
-};
+enum Objet{PAPEL, PLASTICO, VIDRO, METAL, ORGANICO};
 
-class Lixo
+enum Cor{AZUL, VERMELHO, VERDE, AMARELO, MARROM};
+
+class Lixo//:public Objeto
 {
 public:
     Lixo();
     ~Lixo();
 
 private:
-
 
 };
 
