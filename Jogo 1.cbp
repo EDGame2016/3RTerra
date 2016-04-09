@@ -68,12 +68,12 @@
 		<Unit filename="include/GUI.h" />
 		<Unit filename="include/Jogo.h" />
 		<Unit filename="include/Lixo.h" />
-		<Unit filename="include/entidade.h" />
+		<Unit filename="include/Objeto.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/GUI.cpp" />
 		<Unit filename="src/Jogo.cpp" />
 		<Unit filename="src/Lixo.cpp" />
-		<Unit filename="src/entidade.cpp" />
+		<Unit filename="src/Objeto.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
