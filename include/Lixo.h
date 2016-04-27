@@ -1,20 +1,18 @@
 #ifndef LIXO_H
 #define LIXO_H
 
+#include <time.h>
 #include "Objeto.h"
+#include "constantes.h"
 
-enum Objet{PAPEL, PLASTICO, VIDRO, METAL, ORGANICO};
-
-enum Cor{AZUL, VERMELHO, VERDE, AMARELO, MARROM};
-
-class Lixo//:public Objeto
+class Lixo : public Objeto
 {
 public:
     Lixo();
     ~Lixo();
-
+    int getTipo()const;
+    void setTipo(int tipo);
 private:
-
+    int tipo;
 };
-
 #endif // LIXO_H

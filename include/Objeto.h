@@ -1,29 +1,18 @@
-#ifndef ENTIDADE_H
-#define ENTIDADE_H
-#include "GUI.h"
+#ifndef OBJETO_H
+#define OBJETO_H
+#include <SFML/Graphics.hpp>
 
-class Objeto
+class Objeto: public sf::Sprite
 {
 public:
 
     Objeto();
-    Objeto(std::string file);
+    Objeto(sf::Texture &texture);
     virtual ~Objeto();
 
-    void setPosition(sf::Vector2f);
-    void setPosition(float x, float y);
     void setScale(float value);
-    void setTexture(std::string file);
+    void setTexture(sf::Texture &texture);
     void setAlpha(int value);
-
-    sf::Vector2f getPosition() const;
-    sf::Sprite getSprite() const;
-
-
-private:
-
-    sf::Texture texture;
-    sf::Sprite sprite;
 };
 
 #endif // ENTIDADE_H

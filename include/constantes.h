@@ -1,0 +1,10 @@
+#ifndef CONSTANTES_H_INCLUDED
+#define CONSTANTES_H_INCLUDED
+
+#define VERDE 1
+#define AZUL 2
+#define VERMELHO 3
+#define AMARELO 4
+#define MARROM 5
+
+#endif // CONSTANTES_H_INCLUDED

@@ -1,13 +1,13 @@
 #include "Objeto.h"
 
-Objeto::Objeto():texture(),sprite()
+Objeto::Objeto():Sprite()
 {
-
+    Sprite::setPosition(0,0);
 }
 
-Objeto::Objeto(std::string file):texture(),sprite()
+Objeto::Objeto(sf::Texture &texture):Sprite()
 {
-    setTexture(file);
+    setTexture(texture);
 }
 
 
@@ -16,29 +16,20 @@ Objeto::~Objeto()
 
 }
 
-void Objeto::setPosition(sf::Vector2f pos)
-{
-    pos.x = pos.x - (this->sprite.getGlobalBounds().width)/2;
-    pos.y = pos.y - (this->sprite.getGlobalBounds().height)/2;
-    this->sprite.setPosition(pos);
-}
-
-void Objeto::setPosition(float x, float y)
-{
-    setPosition(sf::Vector2f(x,y));
-}
-
 void Objeto::setScale(float value)
 {
-    this->sprite.scale(value, value);
+    Sprite::scale(value, value);
 }
 
-void Objeto::setTexture(std::string file)
+void Objeto::setTexture(sf::Texture &texture)
 {
-    this->texture.loadFromFile(file);
-    this->texture.setSmooth(true);
-    this->sprite.setTexture(this->texture);
-    this->sprite.setPosition(0,0);
+    bool aux = true;
+    if(!Sprite::getTexture())
+        aux = false;
+    Sprite::setTexture(texture);
+
+    if(!aux)
+        Sprite::setOrigin((Sprite::getGlobalBounds().width/2),(Sprite::getGlobalBounds().height/2));
 }
 
 void Objeto::setAlpha(int value)
@@ -46,15 +37,5 @@ void Objeto::setAlpha(int value)
     if((value<0)&&(value>255))
         value = 255;
 
-    this->sprite.setColor(sf::Color(255,255,255,value));
-}
-
-sf::Vector2f Objeto::getPosition() const
-{
-    return this->sprite.getPosition();
-}
-
-sf::Sprite Objeto::getSprite() const
-{
-    return this->sprite;
+    Sprite::setColor(sf::Color(255,255,255,value));
 }
