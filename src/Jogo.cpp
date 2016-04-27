@@ -241,7 +241,8 @@ void Jogo::desenha()
     gui.desenhaLixeiras(lixeiras);
     gui.desenhaEsteira(this->level);
     gui.desenhaLixo(filaLixo, this->level);
-    gui.desenhaTexto("Tempo: "+to_string(antesVirgula) + "." + to_string(depoisVirgula), 30, sf::Color(0,0,0,100), gui.getWidth()/20, gui.getHeigth()/20, false);
+    string aux = to_string(depoisVirgula);
+    gui.desenhaTexto("Tempo: "+to_string(antesVirgula) + "." + aux[2], 30, sf::Color(0,0,0,100), gui.getWidth()/20, gui.getHeigth()/20, false);
     gui.renderiza();
 }
 
@@ -414,7 +415,7 @@ void Jogo::incrementaScore()
 {
     past_time = score.getElapsedTime();
 
-    if(past_time.asSeconds() > 1)
+   /* if(past_time.asSeconds() > 1)
     {
         depoisVirgula++;
 
@@ -424,7 +425,9 @@ void Jogo::incrementaScore()
         }
 
         score.restart();
-    }
+    }*/
+    antesVirgula = past_time.asSeconds();
+    depoisVirgula = past_time.asMilliseconds();
 }
 
 void Jogo::intro()
