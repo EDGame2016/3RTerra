@@ -81,9 +81,8 @@ GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::S
         cap_tex[i].loadFromFile("src/images/caps/cap"+aux+".png");
     }
 
-    /*Carrega as fontes*/
+    /*Carrega as fontes de texto*/
     font.loadFromFile("src/fonts/HelveticaNeue.otf");
-    text.setFont(font);
 
     /*Carrega o áudios*/
     musicaFundo.openFromFile("src/sounds/Carefree.ogg");
@@ -98,7 +97,7 @@ GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::S
     lixeiraCheiaBuffer.loadFromFile("src/sounds/lixeiraCheia.ogg");
     lixeiraCheia.setBuffer(lixeiraCheiaBuffer);
 
-    /*Inicializa o controle da esteira*/
+    /*Inicializa os controladores*/
     controlEsteira = true;
     controlCaptura = 0;
 
@@ -138,16 +137,21 @@ void GUI::limpaTela()
 
 void GUI::desenhaFundo(int level)
 {
+    this->fundo.setTexture(cenario_tex[4]);
     if(level < 6)
+    {
         this->fundo.setTexture(cenario_tex[level-1]);
+        this->cap.setTexture(cap_tex[controlCaptura]);
+    }
 
     if(level == 6)
         this->background.setTexture(background_tex[1]);
 
-    this->cap.setTexture(cap_tex[controlCaptura]);
-
     this->tela.draw(background);
-    this->tela.draw(cap);
+
+    if(level < 6)
+        this->tela.draw(cap);
+
     this->tela.draw(fundo);
 }
 
@@ -270,15 +274,18 @@ void GUI::desenhaLixo(FilaDeLixo& filaLixo, int speed)
 
 void GUI::desenhaTexto(string txt, int csize, sf::Color color, float x, float y, bool origin)
 {
+    sf::Text text;
+    text.setFont(font);
+
+    text.setCharacterSize(csize);
+    text.setColor(color);
+    text.setString(txt);
+
     if(origin)
         text.setOrigin((text.getGlobalBounds().width/2),(text.getGlobalBounds().height/2));
     else
         text.setOrigin(0,0);
 
-
-    text.setString(txt);
-    text.setCharacterSize(csize);
-    text.setColor(color);
     text.setPosition (x, y);
 
     tela.draw(text);

@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1461764603 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
+1461797060 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
-1461728889 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
+1461799874 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
 	"Lixo.h"
 	"GUI.h"
 	"constantes.h"
@@ -395,7 +395,7 @@
 
 1461423289 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\constantes.h
 
-1461728989 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
+1461803260 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
 	<sstream>
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
@@ -534,9 +534,9 @@
 1461262612 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\objeto.cpp
 	"Objeto.h"
 
-1461729033 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
+1461804929 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
 	"GUI.h"
 
-1461729555 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
+1461804897 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
 

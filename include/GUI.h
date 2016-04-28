@@ -1,16 +1,19 @@
 #ifndef GUI_H
 #define GUI_H
 
-/*____Biblioteca de conversão para Strings_____*/
+/*____Biblioteca para a função de conversão para Strings_____*/
 #include <sstream>
+
 /*_____________Biblioteca Gráfica______________*/
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+
 /*________________Defines______________________*/
 #include "constantes.h"
-/*________________?______________________*/
+
+/*________________Classes Utilizadas______________________*/
 #include "Objeto.h"
 #include "Lixeira.h"
 #include "FilaDeLixo.h"
@@ -69,7 +72,6 @@ public:
 
     /*Fontes*/
     sf::Font font;
-    sf::Text text;
 
     /*Sounds*/
     sf::Music musicaFundo;

@@ -3,6 +3,7 @@
 
 #include "Lixo.h"
 #include "GUI.h"
+
 #include "constantes.h"
 
 class Jogo
@@ -15,11 +16,11 @@ public:
 private:
 
     //Métodos
-    void processaEventos();
-    void atualizaEstado();
-    void desenha();
-    void geraFila();
-    void completaFila();
+    void processaEventos(); // processa as entradas do usuário
+    void atualizaEstado(); // atualiza o estado do jogo, ou seja,
+    void desenha(); // desenha todos os elementos da tela que já foram previamente atualizados
+    void geraFila(); // produz uma fila com elementos Lixo randomicamente
+    void completaFila(); //
     void playerInput(sf::Keyboard::Key key, bool isPressed);
     bool pegaLixo(int tipo);
     bool verificaLixo();
@@ -29,6 +30,7 @@ private:
 
     void intro();
     void tutorial();
+    void encerramento();
 
     //Atributos
     GUI gui;
@@ -40,6 +42,7 @@ private:
 
     sf::Clock score;
     sf::Time past_time;
+
     int antesVirgula;
     int depoisVirgula;
 };

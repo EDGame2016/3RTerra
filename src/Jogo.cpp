@@ -34,7 +34,7 @@ void Jogo::run()
     score.restart();
 
     gui.musicaFundo.play();
-    while(gui.tela.isOpen())
+    while(gui.tela.isOpen() && this->level < 6)
     {
         timeSinceLastUpdate += clock.restart();
 
@@ -51,6 +51,9 @@ void Jogo::run()
         }
 
     }
+    encerramento();
+
+
 }
 
 void Jogo::processaEventos()
@@ -415,17 +418,17 @@ void Jogo::incrementaScore()
 {
     past_time = score.getElapsedTime();
 
-   /* if(past_time.asSeconds() > 1)
-    {
-        depoisVirgula++;
+    /* if(past_time.asSeconds() > 1)
+     {
+         depoisVirgula++;
 
-        if(depoisVirgula == 10){
-            antesVirgula++;
-            depoisVirgula = 0;
-        }
+         if(depoisVirgula == 10){
+             antesVirgula++;
+             depoisVirgula = 0;
+         }
 
-        score.restart();
-    }*/
+         score.restart();
+     }*/
     antesVirgula = past_time.asSeconds();
     depoisVirgula = past_time.asMilliseconds();
 }
@@ -545,4 +548,51 @@ void Jogo::tutorial()
         gui.renderiza();
     }
 
+}
+
+void Jogo::encerramento()
+{
+    sf::Color color1(255,255,255,255);
+    sf::Color color2(100,100,100,255);
+    sf::Color color3(255,0,0,255);
+
+    while(gui.tela.isOpen())
+    {
+        gui.limpaTela();
+        gui.desenhaFundo(this->level);
+
+        gui.desenhaTexto("Você venceu!", 60, color1, gui.getWidth()/2, gui.getHeigth()/1.8, true);
+        gui.desenhaTexto("Tempo: " + to_string(antesVirgula) + "." + to_string(depoisVirgula), 40, color3, gui.getWidth()/2, gui.getHeigth()/1.23, true);
+        gui.desenhaTexto("ESPAÇO - Jogar novamente", 25, color2, gui.getWidth()/20, gui.getHeigth()/1.3, false);
+        gui.desenhaTexto("ESC - Encerrar o jogo", 25, color2, gui.getWidth()/20, gui.getHeigth()/1.2, false);
+
+        sf::Event evento;
+
+        while (gui.tela.pollEvent(evento))
+        {
+            switch(evento.type)
+            {
+            case(sf::Event::Closed):
+                gui.tela.close();
+                break;
+
+            case(sf::Event::KeyPressed):
+            {
+                if(evento.key.code == sf::Keyboard::Escape)
+                {
+                    gui.tela.close();
+                }
+                else if(evento.key.code == sf::Keyboard::Space)
+                {
+                    run();
+                }
+                break;
+            }
+            default:
+                break;
+            }
+        }
+
+        gui.renderiza();
+    }
 }
