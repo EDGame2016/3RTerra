@@ -85,6 +85,9 @@ public:
     sf::SoundBuffer lixeiraCheiaBuffer;
     sf::Sound lixeiraCheia;
 
+    sf::SoundBuffer successBuffer;
+    sf::Sound success;
+
     /*Controles de Estado*/
     bool controlEsteira;
     int controlCaptura;

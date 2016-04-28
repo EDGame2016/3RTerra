@@ -245,12 +245,13 @@ void Jogo::desenha()
     gui.desenhaEsteira(this->level);
     gui.desenhaLixo(filaLixo, this->level);
     string aux = to_string(depoisVirgula);
-    gui.desenhaTexto("Tempo: "+to_string(antesVirgula) + "." + aux[2], 30, sf::Color(0,0,0,100), gui.getWidth()/20, gui.getHeigth()/20, false);
+    gui.desenhaTexto("Tempo: "+to_string(antesVirgula) + "." + aux, 30, sf::Color(0,0,0,100), gui.getWidth()/20, gui.getHeigth()/20, false);
     gui.renderiza();
 }
 
 void Jogo::geraFila()
 {
+    filaLixo.destroi();
     int randomTipo;
     int i = 0;
     while(!filaLixo.cheia())
@@ -333,8 +334,6 @@ void Jogo::completaFila()
     filaLixo.pegaOUltimo(ultimo);
     aux.setPosition(ultimo.getPosition().x + (gui.getWidth()/12), 8.5*(gui.getHeigth()/10));
     filaLixo.insere(aux);
-
-
 }
 
 bool Jogo::pegaLixo(int tipo)
@@ -418,19 +417,8 @@ void Jogo::incrementaScore()
 {
     past_time = score.getElapsedTime();
 
-    /* if(past_time.asSeconds() > 1)
-     {
-         depoisVirgula++;
-
-         if(depoisVirgula == 10){
-             antesVirgula++;
-             depoisVirgula = 0;
-         }
-
-         score.restart();
-     }*/
     antesVirgula = past_time.asSeconds();
-    depoisVirgula = past_time.asMilliseconds();
+    depoisVirgula = (past_time.asMilliseconds()/100) - (antesVirgula * 10);
 }
 
 void Jogo::intro()
@@ -552,6 +540,9 @@ void Jogo::tutorial()
 
 void Jogo::encerramento()
 {
+    gui.musicaFundo.stop();
+    gui.success.play();
+
     sf::Color color1(255,255,255,255);
     sf::Color color2(100,100,100,255);
     sf::Color color3(255,0,0,255);
@@ -584,6 +575,10 @@ void Jogo::encerramento()
                 }
                 else if(evento.key.code == sf::Keyboard::Space)
                 {
+                    this->level = 0;
+                    for(int i = 0; i < 5; i++)
+                        this->lixeiras[i].zera();
+
                     run();
                 }
                 break;

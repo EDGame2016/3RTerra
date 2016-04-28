@@ -56,3 +56,12 @@ void FilaDeLixo::move(float y)
         qtd++;
     }
 }
+
+void FilaDeLixo::destroi()
+{
+    Lixo aux;
+    while(!this->vazia())
+    {
+        this->retira(aux);
+    }
+}

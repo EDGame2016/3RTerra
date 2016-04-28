@@ -97,6 +97,9 @@ GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::S
     lixeiraCheiaBuffer.loadFromFile("src/sounds/lixeiraCheia.ogg");
     lixeiraCheia.setBuffer(lixeiraCheiaBuffer);
 
+    successBuffer.loadFromFile("src/sounds/success.ogg");
+    success.setBuffer(successBuffer);
+
     /*Inicializa os controladores*/
     controlEsteira = true;
     controlCaptura = 0;
@@ -140,6 +143,7 @@ void GUI::desenhaFundo(int level)
     this->fundo.setTexture(cenario_tex[4]);
     if(level < 6)
     {
+        this->background.setTexture(background_tex[0]);
         this->fundo.setTexture(cenario_tex[level-1]);
         this->cap.setTexture(cap_tex[controlCaptura]);
     }

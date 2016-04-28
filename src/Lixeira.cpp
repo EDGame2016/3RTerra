@@ -3,7 +3,7 @@
 Lixeira::Lixeira()
 {
     setTipo(0);
-    this->contador = 9;
+    this->contador = 0;
     this->estado = false;
 }
 

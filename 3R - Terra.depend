@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1461797060 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
+1461805907 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
 1461799874 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
@@ -395,7 +395,7 @@
 
 1461423289 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\constantes.h
 
-1461803260 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
+1461809422 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\gui.h
 	<sstream>
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
@@ -511,7 +511,7 @@
 
 1461463709 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\lixeira.h
 
-1461544848 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\filadelixo.h
+1461808749 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\filadelixo.h
 	"Fila.h"
 
 1461447761 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\fila.h
@@ -522,7 +522,7 @@
 1461447820 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\fila.cpp
 	"Fila.h"
 
-1461544856 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\filadelixo.cpp
+1461808834 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\filadelixo.cpp
 	"FilaDeLixo.h"
 
 1461463837 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixeira.cpp
@@ -534,9 +534,9 @@
 1461262612 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\objeto.cpp
 	"Objeto.h"
 
-1461804929 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
+1461809483 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\gui.cpp
 	"GUI.h"
 
-1461804897 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
+1461809537 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
 

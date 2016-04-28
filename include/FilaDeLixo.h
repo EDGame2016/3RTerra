@@ -11,6 +11,7 @@ public:
     bool pegaOPrimeiro(Lixo& x);
     bool pegaOUltimo(Lixo& x);
     void move(float y);
+    void destroi();
 };
 
 #endif // FILADELIXO_H
