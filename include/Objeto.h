@@ -7,12 +7,11 @@ class Objeto: public sf::Sprite
 public:
 
     Objeto();
-    Objeto(sf::Texture &texture);
-    virtual ~Objeto();
+    Objeto(sf::Texture &texture); // constrói com uma textura
 
-    void setScale(float value);
-    void setTexture(sf::Texture &texture);
-    void setAlpha(int value);
+    void setScale(float value); // modifica a escala do objeto
+    void setTexture(sf::Texture &texture); // configura a textura
+    void setAlpha(int value); // configura a transparência
 };
 
 #endif // ENTIDADE_H

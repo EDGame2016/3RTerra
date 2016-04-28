@@ -6,17 +6,16 @@ class Lixeira
 {
 public:
     Lixeira();
-    Lixeira(int tipo);
-    ~Lixeira();
+    Lixeira(int tipo); // constroi com o tipo da lixeira
 
     void setTipo(int tipo);
-    bool trocaEstado(bool i);
+    bool trocaEstado(bool i); // troca o estado de estar pressionada ou não
 
-    void incrementa();
-    void zera();
-    bool cheia();
+    void incrementa(); // incrementa o contador de lixo
+    void zera(); // zera o contador de lixo
+    bool cheia(); // retorna true se a lixeira estiver cheia
 
-    int getContador()const;
+    int getContador()const; // retorna a quantidade de lixo
     int getTipo()const;
     bool getEstado()const;
 

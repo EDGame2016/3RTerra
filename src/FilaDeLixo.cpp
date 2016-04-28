@@ -5,11 +5,6 @@ FilaDeLixo::FilaDeLixo(int tamanho) : Fila(tamanho)
 
 }
 
-FilaDeLixo::~FilaDeLixo()
-{
-
-}
-
 bool FilaDeLixo::pegaOPrimeiro(Lixo& x)
 {
     if(this->vazia())

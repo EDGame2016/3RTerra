@@ -14,11 +14,6 @@ Lixeira::Lixeira(int tipo)
     this->estado = false;
 }
 
-Lixeira::~Lixeira()
-{
-
-}
-
 void Lixeira::setTipo(int tipo)
 {
     if ((tipo<0)&&(tipo>5))

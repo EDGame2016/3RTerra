@@ -2,7 +2,7 @@
 1461805907 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\main.cpp
 	"Jogo.h"
 
-1461799874 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
+1461810594 c:\users\felipe sampaio\documents\sfml projects\edgame1\include\jogo.h
 	"Lixo.h"
 	"GUI.h"
 	"constantes.h"
@@ -525,7 +525,7 @@
 1461808834 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\filadelixo.cpp
 	"FilaDeLixo.h"
 
-1461463837 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixeira.cpp
+1461809901 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixeira.cpp
 	"Lixeira.h"
 
 1461434467 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\lixo.cpp
@@ -539,4 +539,61 @@
 
 1461809537 source:c:\users\felipe sampaio\documents\sfml projects\edgame1\src\jogo.cpp
 	"Jogo.h"
+
+1461537631 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\resource.rc
+
+1461447820 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\fila.cpp
+	"Fila.h"
+
+1461447761 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\fila.h
+	"Lixo.h"
+
+1461817617 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\lixo.h
+	<time.h>
+	"Objeto.h"
+	"constantes.h"
+
+1461817491 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\objeto.h
+	<SFML/Graphics.hpp>
+
+1461423289 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\constantes.h
+
+1461808834 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\filadelixo.cpp
+	"FilaDeLixo.h"
+
+1461817892 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\filadelixo.h
+	"Fila.h"
+
+1461809537 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\jogo.cpp
+	"Jogo.h"
+
+1461818025 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\jogo.h
+	"Lixo.h"
+	"GUI.h"
+	"constantes.h"
+
+1461818124 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\gui.h
+	<sstream>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"constantes.h"
+	"Objeto.h"
+	"Lixeira.h"
+	"FilaDeLixo.h"
+
+1461817762 c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\include\lixeira.h
+
+1461809901 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\lixeira.cpp
+	"Lixeira.h"
+
+1461814749 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\main.cpp
+	"Jogo.h"
+
+1461817516 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\lixo.cpp
+	"Lixo.h"
+
+1461817388 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\objeto.cpp
+	"Objeto.h"
 

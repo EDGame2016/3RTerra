@@ -5,11 +5,6 @@ Lixo::Lixo() : Objeto()
     this->setTipo(0);
 }
 
-Lixo::~Lixo()
-{
-
-}
-
 int Lixo::getTipo()const
 {
     return this->tipo;

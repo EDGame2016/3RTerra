@@ -23,23 +23,22 @@ using namespace std;
 class GUI
 {
 public:
-    GUI(int width = 1280, int height = 720);
-    ~GUI();
+    GUI(int width = 1280, int height = 720); // Constrói a tela com 1280 x 720
 
-    void renderiza();
-    void limpaTela();
+    void renderiza(); // exibe as imagens na tela
+    void limpaTela(); // sobrescreve a tela com a cor branca
 
-    void desenhaFundo(int level);
-    void desenhaLixeiras(Lixeira* lixeiras);
-    void desenhaEsteira(int speed);
-    void desenhaLixo(FilaDeLixo& filaLixo, int speed);
-    void desenhaTexto(string txt, int csize, sf::Color color, float x, float y, bool origin);
-    void desenhaPause();
+    void desenhaFundo(int level); // desenha os elementos de fundo
+    void desenhaLixeiras(Lixeira* lixeiras); // desenha todas as lixeiras, seus contadores e indicadores
+    void desenhaEsteira(int speed); // desenha a esteira na velocidade fornecida
+    void desenhaLixo(FilaDeLixo& filaLixo, int speed); // desenha a fila de lixo passada como parametro
+    void desenhaTexto(string txt, int csize, sf::Color color, float x, float y, bool origin); // desenha um texto na tela
+    void desenhaPause(); // desenha a tela de pause do jogo
 
-    int getWidth()const;
-    int getHeigth()const;
+    int getWidth()const; // retorna a largura da tela
+    int getHeigth()const; // retorna a altura da tela
 
-    sf::RenderWindow tela;
+    sf::RenderWindow tela; // Objeto que será a tela do jogo
 
     /*Texturas*/
     sf::Texture logo_tex;
@@ -106,6 +105,7 @@ private:
 
 };
 
+/*Função que converte um int para string*/
 string to_string(int x);
 
 #endif // GUI_H

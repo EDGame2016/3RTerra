@@ -10,12 +10,6 @@ Objeto::Objeto(sf::Texture &texture):Sprite()
     setTexture(texture);
 }
 
-
-Objeto::~Objeto()
-{
-
-}
-
 void Objeto::setScale(float value)
 {
     Sprite::scale(value, value);

@@ -2,10 +2,10 @@
 
 /*
 * Título: R3 - Terra
-* Criadores: Felipe Sampaio, Gabriel de Paiva, Miguel de Souza, Pedro Henrique Migliatti
+* Autores: Felipe Sampaio, Gabriel de Paiva, Miguel de Souza, Pedro Henrique Migliatti
 * Data: 28 de abril de 2016
-*
-* Jogo desenvolvido para a disciplina de Estrutura de Dados, do Curso Bacharelado em Ciência da Computação da UFSCar
+* '''Jogo desenvolvido para a disciplina 'Estrutura de Dados', do Curso Bacharelado em Ciência da Computação da UFSCar'''
+* Professor: Roberto Ferrari
 */
 
 int main()

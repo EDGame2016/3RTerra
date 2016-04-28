@@ -9,10 +9,10 @@ class Lixo : public Objeto
 {
 public:
     Lixo();
-    ~Lixo();
-    int getTipo()const;
-    void setTipo(int tipo);
+    int getTipo()const; // retorna o tipo do lixo conforme definido em constantes.h
+    void setTipo(int tipo); // configura o tipo
+
 private:
-    int tipo;
+    int tipo; // armazena o tipo
 };
 #endif // LIXO_H

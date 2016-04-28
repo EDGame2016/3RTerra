@@ -1,6 +1,6 @@
 #include "GUI.h"
 
-GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::Style::Fullscreen), clk_esteira()
+GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "3R - Terra"), clk_esteira() // para ser fullscreen é só adicionar 'sf::Style::Fullcreen' no terceiro parametro de tela
 {
     tela.setMouseCursorVisible(false);
 
@@ -8,7 +8,7 @@ GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::S
     this->width = width;
     this->height = height;
 
-    string aux;
+    string aux; // string auxiliar para ajudar na especificação do caminho dos arquivos
 
     /*Carrega as texturas (imagens)*/
     logo_tex.loadFromFile("src/images/logoTerra.png");
@@ -120,11 +120,6 @@ GUI::GUI(int width, int height):tela(sf::VideoMode(width, height), "Jogo", sf::S
 
     /*Inicializa o contador de tempo para a função desenha esteira*/
     clk_esteira.restart();
-
-}
-
-GUI::~GUI()
-{
 
 }
 
