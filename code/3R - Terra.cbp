@@ -14,8 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/include" />
-					<Add directory="include" />
+					<Add directory="SFML-2.3.2/include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -24,7 +23,7 @@
 					<Add library="sfml-audio-d" />
 					<Add library="sfml-main-d" />
 					<Add library="sfml-network-d" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/lib" />
+					<Add directory="SFML-2.3.2/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -35,8 +34,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-DSFML_STATIC" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/include" />
-					<Add directory="include" />
+					<Add directory="SFML-2.3.2/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -46,14 +44,14 @@
 					<Add library="sfml-audio" />
 					<Add library="sfml-main" />
 					<Add library="sfml-network" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/lib" />
+					<Add directory="SFML-2.3.2/lib" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-DSFML_STATIC" />
-			<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/include" />
+			<Add directory="SFML-2.3.2/include" />
 		</Compiler>
 		<Linker>
 			<Add library="sfml-graphics" />
@@ -62,7 +60,7 @@
 			<Add library="sfml-audio" />
 			<Add library="sfml-main" />
 			<Add library="sfml-network" />
-			<Add directory="C:/Program Files (x86)/CodeBlocks/SFML/lib" />
+			<Add directory="SFML-2.3.2/lib" />
 		</Linker>
 		<Unit filename="include/Fila.h" />
 		<Unit filename="include/FilaDeLixo.h" />

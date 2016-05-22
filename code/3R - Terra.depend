@@ -597,3 +597,63 @@
 1461817388 source:c:\users\felipe sampaio\documents\sfml projects\projeto 3r - terra\src\objeto.cpp
 	"Objeto.h"
 
+1461537631 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\resource.rc
+
+1461447820 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\fila.cpp
+	"Fila.h"
+
+1461447761 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\fila.h
+	"Lixo.h"
+
+1461817617 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\lixo.h
+	<time.h>
+	"Objeto.h"
+	"constantes.h"
+
+1461818333 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\objeto.h
+	<SFML/Graphics.hpp>
+
+1461423289 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\constantes.h
+
+1461817882 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\filadelixo.cpp
+	"FilaDeLixo.h"
+
+1461817892 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\filadelixo.h
+	"Fila.h"
+
+1461818066 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\gui.cpp
+	"GUI.h"
+
+1461818124 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\gui.h
+	<sstream>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"constantes.h"
+	"Objeto.h"
+	"Lixeira.h"
+	"FilaDeLixo.h"
+
+1461817762 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\lixeira.h
+
+1461809537 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\jogo.cpp
+	"Jogo.h"
+
+1461818025 c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\include\jogo.h
+	"Lixo.h"
+	"GUI.h"
+	"constantes.h"
+
+1461817667 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\lixeira.cpp
+	"Lixeira.h"
+
+1461817516 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\lixo.cpp
+	"Lixo.h"
+
+1461817388 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\src\objeto.cpp
+	"Objeto.h"
+
+1461818437 source:c:\users\felipe sampaio\dropbox\ufscar\bcc\3° semestre\ed\jogos\sfml projects\projeto_3r-terra\code\main.cpp
+	"Jogo.h"
+
